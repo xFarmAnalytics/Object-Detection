@@ -1,0 +1,14 @@
+Activate virtualenv:
+source ~/xVisionLite1/xVisionLite1-Dev/bin/activate
+
+
+generic person detecion:
+python3 def_webcam.py --threshold=0.6 --graph=edgetpu.tflite --modeldir=Sample_TFLite_model/default --edgetpu
+
+
+home3:
+python3 home_webcam.py --threshold=0.7 --graph=home3_edgetpu.tflite --modeldir=Sample_TFLite_model/home3 --edgetpu
+
+
+hardhat:
+python3 hardhat_webcam.py --threshold=0.4 --graph=hardhat_edgetpu.tflite --modeldir=Sample_TFLite_model/hardhat --edgetpu
